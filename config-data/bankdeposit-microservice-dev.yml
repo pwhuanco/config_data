@@ -3,7 +3,8 @@ spring:
     name: bankdeposit-microservice
   data:
     mongodb:
-      uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/deposit?retryWrites=true&w=majority
+      #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/deposit?retryWrites=true&w=majority
+      uri: mongodb+srv://developer:developer@cluster0.aa6qr.mongodb.net/deposit?retryWrites=true&w=majority
 
 apiclient:
   uri: http://localhost:8095
