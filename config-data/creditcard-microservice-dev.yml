@@ -1,0 +1,11 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: creditcard-microservice
+  data:
+    mongodb:
+      uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/creditcard?retryWrites=true&w=majority
+
+

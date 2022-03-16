@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bankdeposit-microservice
+  data:
+    mongodb:
+      uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/deposit?retryWrites=true&w=majority
+
+apiclient:
+  uri: http://localhost:8095
+microservice-client:
+  uri: /api/clients/
+microservice-accounts:
+  uri: /api/accounts/
