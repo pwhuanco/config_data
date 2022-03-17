@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: client-microservice
+    name: bankclient-microservice
   data:
     mongodb:
       #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/clients?retryWrites=true&w=majority
