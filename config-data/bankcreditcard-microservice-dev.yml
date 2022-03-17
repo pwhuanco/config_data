@@ -8,7 +8,15 @@ spring:
     mongodb:
       #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/creditcard?retryWrites=true&w=majority
       uri: mongodb+srv://developer:developer@cluster0.aa6qr.mongodb.net/clients?retryWrites=true&w=majority
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+  info:
+    env:
+      enabled: true
 eureka:
   client:
     service-url:

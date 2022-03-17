@@ -20,7 +20,7 @@ management:
       enabled: true
 info:
   application:
-    name : client-microservice
+    name : bankclient-microservice
     Description : This is a Microservice to manage clients
     artifact : bank-clients
     version : '@project.version@'
