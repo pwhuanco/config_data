@@ -6,8 +6,17 @@ spring:
       #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/deposit?retryWrites=true&w=majority
       uri: mongodb+srv://developer:developer@cluster0.aa6qr.mongodb.net/deposit?retryWrites=true&w=majority
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka
+
+server:
+  port: 8093
+
+
 apiclient:
-  uri: http://localhost:8095
+  uri: http://localhost:8083
 microservice-client:
   uri: /api/clients/
 microservice-accounts:
