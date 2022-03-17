@@ -5,8 +5,9 @@ spring:
     name: bankcredit-microservice
   data:
     mongodb:
-      uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/credit?retryWrites=true&w=majority
-  
+      #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/credit?retryWrites=true&w=majority
+      uri: mongodb+srv://developer:developer@cluster0.aa6qr.mongodb.net/credit?retryWrites=true&w=majority
+
 eureka:
   client:
     service-url:

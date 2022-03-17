@@ -5,7 +5,8 @@ spring:
     name: bankaccounts-microservice
   data:
     mongodb:
-      uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/accounts?retryWrites=true&w=majority
+      #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/accounts?retryWrites=true&w=majority
+      uri: mongodb+srv://developer:developer@cluster0.aa6qr.mongodb.net/accounts?retryWrites=true&w=majority
 
 eureka:
   client:
@@ -16,9 +17,13 @@ health:
   config:
     enabled=false:
 
-logging:
-  config:
-  file: logback-spring.xml
+apiclient:
+  uri: http://localhost:8095
+microservice-clients:
+  uri: /api/clients/
+microservice-accounts:
+  uri: /api/accounts/
+
 
 
 
