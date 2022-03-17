@@ -11,11 +11,16 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8081/eureka
+      defaultZone: http://localhost:8082/eureka
 
-health:
-  config:
-    enabled=false:
+info:
+  application:
+    name : client-microservice
+    Description : This is a Microservice to manage clients
+    artifact : bank-clients
+    version : '@project.version@'
+    spring-cloud-version: '@spring-cloud.version@'
+    spring-boot-version: 2.6.4
 
 apiclient:
   uri: http://localhost:8095
