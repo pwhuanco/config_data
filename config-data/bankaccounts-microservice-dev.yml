@@ -1,5 +1,6 @@
 server:
   port: 8092
+
 spring:
   application:
     name: bankaccounts-microservice
@@ -8,10 +9,6 @@ spring:
       #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/accounts?retryWrites=true&w=majority
       uri: mongodb+srv://developer:developer@cluster0.aa6qr.mongodb.net/accounts?retryWrites=true&w=majority
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8082/eureka
 management:
   endpoints:
     web:
@@ -29,6 +26,11 @@ info:
     version : '@project.version@'
     spring-cloud-version: '@spring-cloud.version@'
     spring-boot-version: 2.6.4
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka
 
 apiclient:
   uri: http://localhost:8095
