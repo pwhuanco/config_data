@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: creditcard-microservice
+    name: bankcreditcard-microservice
   data:
     mongodb:
       #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/creditcard?retryWrites=true&w=majority
@@ -21,3 +21,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8082/eureka
+
+apiclient:
+  uri: http://localhost:8083
+microservice-client:
+  uri: /api/clients/
+microservice-accounts:
+  uri: /api/accounts/
