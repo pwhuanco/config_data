@@ -35,5 +35,5 @@ spring:
         - id: bankcreditcard-microservice
             uri: http://localhost:8096
             predicates:
-              - Path=/api/creditcard/**
+            - Path=/api/creditcard/**
             
