@@ -33,7 +33,7 @@ eureka:
       defaultZone: http://localhost:8082/eureka
 
 apiclient:
-  uri: http://localhost:8095
+  uri: http://localhost:8083
 microservice-clients:
   uri: /api/clients/
 microservice-accounts:
