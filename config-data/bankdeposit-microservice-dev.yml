@@ -24,7 +24,7 @@ management:
 info:
   application:
     name : bankdeposit-microservice
-    Description : This is a Microservice to manage clients
+    Description : This is a Microservice to manage deposits
     artifact : bank-clients
     version : '@project.version@'
     spring-cloud-version: '@spring-cloud.version@'
