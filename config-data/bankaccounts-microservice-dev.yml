@@ -75,7 +75,7 @@ resilience4j.timelimiter:
         timeoutDuration: 2000ms
         cancelRunningFuture: true
       getAccountCB:
-        timeoutDuration: 1500ms
+        timeoutDuration: 2000ms
         cancelRunningFuture: true
 
 
