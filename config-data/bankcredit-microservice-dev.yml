@@ -26,8 +26,7 @@ info:
 resilience4j:
   circuitbreaker:
     instances:
-      saveAccountCB:
-
+      saveCreditCB:
         register-health-indicator: true
         sliding-window-type: count_based
         sliding-window-size: 5
@@ -39,7 +38,7 @@ resilience4j:
         slow-call-duration-threshold: 2s
         writable-stack-trace-enabled: true
         automatic-transition-from-open-to-half-open-enabled: true
-      getAccountCB:
+      getCreditCB:
         register-health-indicator: true
         sliding-window-type: count_based
         sliding-window-size: 5
@@ -52,4 +51,11 @@ resilience4j:
         writable-stack-trace-enabled: true
         automatic-transition-from-open-to-half-open-enabled: true
         
-  
+resilience4j.timelimiter:
+    instances:
+      saveCreditCB:
+        timeoutDuration: 2000ms
+        cancelRunningFuture: true
+      getCreditCB:
+        timeoutDuration: 2000ms
+        cancelRunningFuture: true
