@@ -11,7 +11,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8082/eureka
+      defaultZone: http://192.168.1.57:8082/eureka
 management:
   endpoints:
     web:
@@ -68,7 +68,7 @@ resilience4j:
         cancelRunningFuture: true
 
 apiclient:
-  uri: http://localhost:8083
+  uri: http://192.168.1.57:8083
 microservice-client:
   uri: /api/clients/
 microservice-accounts:

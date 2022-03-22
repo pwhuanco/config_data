@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: http://192.168.1.57:8082/eureka/
 
 spring:
   application:
@@ -13,27 +13,27 @@ spring:
     gateway:
       routes:
         - id: client-microservice
-          uri: http://localhost:8091
+          uri: http://192.168.1.57:8091
           predicates:
             - Path=/api/clients/**
         - id: bankaccounts-microservice
-          uri: http://localhost:8092
+          uri: http://192.168.1.57:8092
           predicates:
             - Path=/api/accounts/**
         - id: bankdeposit-microservice
-          uri: http://localhost:8093
+          uri: http://192.168.1.57:8093
           predicates:
             - Path=/api/deposit/**
         - id: bankwithdrawal-microservice
-          uri: http://localhost:8094
+          uri: http://192.168.1.57:8094
           predicates:
             - Path=/api/withdrawal/**
         - id: bankcredit-microservice
-          uri: http://localhost:8095
+          uri: http://192.168.1.57:8095
           predicates:
             - Path=/api/credit/**
         - id: bankcreditcard-microservice
-          uri: http://localhost:8096
+          uri: http://192.168.1.57:8096
           predicates:
             - Path=/api/creditcard/**
             

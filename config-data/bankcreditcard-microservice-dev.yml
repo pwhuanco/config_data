@@ -20,10 +20,10 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8082/eureka
+      defaultZone: http://192.168.1.57:8082/eureka
 
 apiclient:
-  uri: http://localhost:8083
+  uri: http://192.168.1.57:8083
 microservice-client:
   uri: /api/clients/
 microservice-accounts:
