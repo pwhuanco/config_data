@@ -38,7 +38,8 @@ microservice-clients:
   uri: /api/clients/
 microservice-accounts:
   uri: /api/accounts/
-
+microservice-creditcard:
+  uri: /api/creditcard/
 
 
 resilience4j:
