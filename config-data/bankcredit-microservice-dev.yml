@@ -13,6 +13,11 @@ eureka:
     service-url:
       defaultZone: http://192.168.1.57:8082/eureka
 
+apiclient:
+  uri: http://192.168.1.57:8083
+microservice-clients:
+  uri: /api/clients/
+
 info:
   application:
     name : bankdeposit-microservice
