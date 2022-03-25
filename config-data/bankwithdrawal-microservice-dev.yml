@@ -15,9 +15,9 @@ eureka:
 
 info:
   application:
-    name : bankdeposit-microservice
-    Description : This is a Microservice to manage deposits
-    artifact : bank-clients
+    name : bankwithdrawal-microservice
+    Description : This is a Microservice to manage withdrawals
+    artifact : bank-withdrawal
     version : '@project.version@'
     spring-cloud-version: '@spring-cloud.version@'
     spring-boot-version: 2.6.4

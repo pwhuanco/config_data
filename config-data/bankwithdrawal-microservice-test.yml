@@ -15,7 +15,7 @@ eureka:
 
 info:
   application:
-    name : bankdeposit-microservice
+    name : bankwithdrawal-microservice
     Description : This is a Microservice to manage deposits
     artifact : bank-clients
     version : '@project.version@'
