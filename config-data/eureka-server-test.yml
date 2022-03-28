@@ -1,9 +1,11 @@
 server:
-  port: 8082
+  port: 80
+  #port: 8082
 
 eureka:
   instance:
-    hostname: 192.168.1.57
+    #hostname: 192.168.1.57
+    hostname: bootcampeureka.azurewebsites.net
   client:
     registerWithEureka: false
     fetchRegistry: false
