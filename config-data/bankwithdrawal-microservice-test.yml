@@ -11,7 +11,8 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.1.57:8082/eureka
+      #defaultZone: http://192.168.1.57:8082/eureka
+      defaultZone: https://bootcampeureka.azurewebsites.net/eureka
 
 info:
   application:
