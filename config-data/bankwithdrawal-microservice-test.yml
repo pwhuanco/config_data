@@ -1,5 +1,6 @@
 server:
-  port: 8094
+  port: 80
+  #port: 8094
 spring:
   application:
     name: bankwithdrawal-microservice

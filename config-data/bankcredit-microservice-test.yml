@@ -1,5 +1,6 @@
 server:
-  port: 8095
+  port: 80
+  #port: 8095
 spring:
   application:
     name: bankcredit-microservice

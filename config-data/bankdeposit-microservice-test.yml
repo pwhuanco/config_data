@@ -1,5 +1,6 @@
 server:
-  port: 8093
+  port: 80
+  #port: 8093
 spring:
   application:
     name: bankdeposit-microservice
