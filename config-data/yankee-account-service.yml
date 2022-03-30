@@ -2,7 +2,7 @@ server:
   port: 8099
 spring.data:
   mongodb:
-    uri:
+    uri: mongodb+srv://admin:admin@cluster0.2zbex.mongodb.net/yanki?retryWrites=true&w=majority
 eureka:
   client:
     service-url:
@@ -11,7 +11,7 @@ eureka:
 info:
   application:
     name : yankee-account-service
-    Description : yankee mobile banking
+    Description : yanki mobile banking
 
 resilience4j:
   circuitbreaker:
