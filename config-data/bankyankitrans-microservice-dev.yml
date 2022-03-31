@@ -1,0 +1,58 @@
+server:
+  port: 8098
+
+spring:
+  application:
+    name: bankyankiaccount-microservice
+    
+spring.data:
+  mongodb:
+    uri: mongodb+srv://admin:admin@cluster0.2zbex.mongodb.net/yanki?retryWrites=true&w=majority
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: https://bootcampeureka.azurewebsites.net/eureka
+
+info:
+  application:
+    name : yankee-account-service
+    Description : yanki mobile banking
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      saveCreditCB:
+        register-health-indicator: true
+        sliding-window-type: count_based
+        sliding-window-size: 5
+        failure-rate-threshold: 40
+        slow-call-rate-threshold: 40
+        permitted-number-of-calls-in-half-open-state: 1
+        max-wait-duration-in-half-open-state: 10s
+        wait-duration-in-open-state: 10s
+        slow-call-duration-threshold: 2s
+        writable-stack-trace-enabled: true
+        automatic-transition-from-open-to-half-open-enabled: true
+      getCreditCB:
+        register-health-indicator: true
+        sliding-window-type: count_based
+        sliding-window-size: 5
+        failure-rate-threshold: 40
+        slow-call-rate-threshold: 40
+        permitted-number-of-calls-in-half-open-state: 1
+        max-wait-duration-in-half-open-state: 10s
+        wait-duration-in-open-state: 10s
+        slow-call-duration-threshold: 2s
+        writable-stack-trace-enabled: true
+        automatic-transition-from-open-to-half-open-enabled: true
+        
+resilience4j.timelimiter:
+    instances:
+      saveCreditCB:
+        timeoutDuration: 2000ms
+        cancelRunningFuture: true
+      getCreditCB:
+        timeoutDuration: 2000ms
+        cancelRunningFuture: true
