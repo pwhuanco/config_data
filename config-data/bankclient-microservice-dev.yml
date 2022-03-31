@@ -70,3 +70,8 @@ resilience4j.timelimiter:
       getClientCB:
         timeoutDuration: 2000ms
         cancelRunningFuture: true
+
+apiclient:
+  uri: http://192.168.1.57:8083
+microservice-accounts:
+  uri: /api/accounts/
