@@ -8,6 +8,12 @@ spring:
     mongodb:
       #uri: mongodb+srv://spiritbear:Cuymagic321@mycluster.s22zz.mongodb.net/accounts?retryWrites=true&w=majority
       uri: mongodb+srv://developer:developer@cluster0.aa6qr.mongodb.net/accounts?retryWrites=true&w=majority
+  cache:
+    type: redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
 
 management:
   endpoints:
