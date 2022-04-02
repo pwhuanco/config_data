@@ -19,3 +19,12 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8082/eureka/
+      
+apiclient:
+  uri: http://192.168.1.57:8083
+microservice-clients:
+  uri: /api/clients/
+microservice-accounts:
+  uri: /api/accounts/
+microservice-creditcard:
+  uri: /api/creditcard/
