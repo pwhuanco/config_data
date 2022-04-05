@@ -40,4 +40,8 @@ spring:
           uri: http://localhost:8097
           predicates:
             - Path=/api/creditcard/**
+        - id: bootcoin-microservice
+          uri: http://localhost:8098
+          predicates:
+            - Path=/api/bootcoin/**
             
